@@ -1,0 +1,17 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+
+[[mods]]
+modId="sky"
+version="1.0.0"
+displayName="Sky"
+description="Sky"
+displayURL="http://suikacraft.com"
+authors="yurisuika"
+
+[[dependencies.sky]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31,)"
+    ordering="NONE"
+    side="BOTH"
