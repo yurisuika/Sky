@@ -1,6 +1,6 @@
 # [Sky](http://suikacraft.com)
 
-Sap is a Minecraft mod that adds a Sky dimension. Weather and daytime pass just like in the Overworld, but absolutely no blocks generate!
+Sky is a Minecraft mod that adds a Sky dimension. Weather and daytime pass just like in the Overworld, but absolutely no blocks generate!
 
 This is intended to be used for spawn maps where you paste in your own schematics/structures, or start off from scratch right here!
 
