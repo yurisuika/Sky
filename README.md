@@ -1,27 +1,47 @@
 # [Sky](http://suikacraft.com)
 
-Sky is a Minecraft mod that adds a Sky dimension. Weather and daytime pass just like in the Overworld, but absolutely no blocks generate!
+Sky is a Forge mod for Minecraft that adds a Sky dimension. Weather and daytime pass just like in the Overworld, but absolutely no blocks generate!
 
-This is intended to be used for spawn maps where you paste in your own schematics/structures, or start off from scratch right here!
+You can use Sky to make a spawn map and use command blocks to travel to other dimensions. The sky is yours to paste in your own schematics and structures, or start off from scratch right here!
 
-## Releases
+## DOWNLOADS
 
-Currently there are no released versions.
+### Source Building
 
-###### STABLE
+To build from source you will need have JDK 8  to compile and, optionally, Git to clone the repository. Otherwise, download the archive and just run `./gradlew build` from the root project folder.
 
-Stable releases of Sky!
+#### Commands
 
-* [*`Sky × 1.15`*]()
+When using Git, just choose a directory you wish to keep the project root folder in, then run these commands:
 
-## Links
+```shell script
+git clone --recursive https://github.com/yurisuika/sky.git
 
-###### SERVERS
+cd ./sky
 
-Join *`play.suikacraft.com`* for the main SuikaCraft server!
+./gradlew build
+```
 
-Join *`smp.suikacraft.com`* for our latest vanilla snapshot server!
+Afterwards, your compiled JAR will be in `./build/libs`.
 
-###### DISCORD
+### Released Builds
 
-The one and only! Join the *[SuikaCraft Discord](https://discord.gg/0zdNEkQle7Qg9C1H)* to find the latest discussion on the resourcepack and server or just to chat!
+While you can compile from source, you can always download the latest releases right off of GitHub. Either click the links below or check the releases tab.
+
+#### Latest Builds
+
+Stable releases of Sky ready to be consumed by the public!
+
+##### 1.15 - [*`1.0.0`*]()
+
+## LINKS
+
+Get all the hot tips and tricks here!
+
+#### SERVERS
+
+Join *`play.suikacraft.com`* to play on SuikaCraft today!
+
+##### DISCORD
+
+The one and only! Join the *[SuikaCraft Discord](https://discord.gg/0zdNEkQle7Qg9C1H)* to find the latest discussion on the resource pack and server or just to chat!
