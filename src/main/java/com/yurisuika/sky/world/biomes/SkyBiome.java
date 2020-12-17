@@ -21,7 +21,11 @@ public class SkyBiome extends Biome {
 	public SkyBiome(Builder biomeBuilder) {
 		super(biomeBuilder);
 	}
-}
 
-//update mappings post command:
-//gradlew --refresh-dependencies
+	//private int calculateSkyColor() {
+	//    float f = this.temperature;
+	//    f /= 3.0F;
+	//    f = MathHelper.clamp(f, -1.0F, 1.0F);
+	//    return MathHelper.hsvToRGB(0.5805F - f * 0.05F, 0.2F + f * 0.1F, 0.89F);
+	//}
+}

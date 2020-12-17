@@ -47,9 +47,9 @@ public class SkyDimension extends Dimension {
 	public Vec3d getFogColor(float celestialAngle, float partialTicks) {
 			float f = MathHelper.cos(celestialAngle * ((float) Math.PI * 2F)) * 2.0F + 0.5F;
 			f = MathHelper.clamp(f, 0.0F, 1.0F);
-			float f1 = 0.7529412F;
-			float f2 = 0.84705883F;
-			float f3 = 1.0F;
+			float f1 = 0.78823529F;
+			float f2 = 0.83921568F;
+			float f3 = 0.87843137F;
 			f1 = f1 * (f * 0.94F + 0.06F);
 			f2 = f2 * (f * 0.94F + 0.06F);
 			f3 = f3 * (f * 0.91F + 0.09F);
@@ -76,4 +76,14 @@ public class SkyDimension extends Dimension {
 	public int getActualHeight() {
 		return 256;
 	}
+
+	@Override
+	public float getCloudHeight() {
+		return 0F;
+	}
+
+	public double voidFadeMagnitude() {
+		return 0.0D;
+	}
+
 }

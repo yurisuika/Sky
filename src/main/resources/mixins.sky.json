@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.yurisuika.sky.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "sky.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "world.MixinWorldType",
+    "client.world.MixinClientWorld"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
