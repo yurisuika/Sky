@@ -28,7 +28,7 @@ public class BiomeInit {
 			.register("sky",
 					() -> new SkyBiome(
 							new Biome.Builder().precipitation(RainType.RAIN).scale(1.2f).temperature(0.5f)
-									.waterColor(16724639).waterFogColor(16762304)
+									.waterColor(16777215).waterFogColor(16777215)
 									.surfaceBuilder(
 											new ConfiguredSurfaceBuilder<SurfaceBuilderConfig>(
 													register("sky_surface",

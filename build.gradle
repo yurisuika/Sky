@@ -1,14 +1,17 @@
 buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
+        maven { url = 'http://repo.spongepowered.org/maven/' }
         jcenter()
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+        classpath group: 'org.spongepowered', name: 'mixingradle', version: '0.7-SNAPSHOT'
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 
@@ -19,11 +22,15 @@ archivesBaseName = 'sky'
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
 minecraft {
-    mappings channel: 'snapshot', version: '20200225-1.15.1'
+    mappings channel: 'snapshot', version: "${mapping}-1.15.1"
+
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     runs {
         client {
             workingDirectory project.file('run')
+
+            arg "-mixin.config=mixins.sky.json"
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
@@ -38,6 +45,8 @@ minecraft {
         server {
             workingDirectory project.file('run')
 
+            arg "-mixin.config=mixins.sky.json"
+
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
 
@@ -50,8 +59,37 @@ minecraft {
     }
 }
 
+processResources {
+    from (sourceSets.main.resources.srcDirs) {
+        include 'META-INF/mods.toml'
+        expand 'version': project.version
+    }
+    rename '(.+_at.cfg)', 'META-INF/$1'
+}
+
+repositories {
+    maven {
+        url = "http://repo.spongepowered.org/maven"
+    }
+}
+
+mixin {
+    add sourceSets.main, "sky.refmap.json"
+}
+
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.15.2-31.1.1'
+    minecraft 'net.minecraftforge:forge:' + minecraft_version + '-' + forge_version
+    compile 'org.spongepowered:mixin:0.8.2'
+}
+
+task sourcesJar(type: Jar) {
+    from sourceSets.main.allJava
+    from (sourceSets.main.output) {}
+    classifier = 'sources'
+}
+
+artifacts {
+    archives jar
 }
 
 jar {
@@ -63,7 +101,10 @@ jar {
             "Implementation-Title": project.name,
             "Implementation-Version": "${version}",
             "Implementation-Vendor" :"yurisuika",
-            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+            "MixinConfigs": "mixins.sky.json"
         ])
     }
 }
+
+repositories { mavenLocal() }

@@ -31,4 +31,5 @@ public class SkyChunkGenerator extends ChunkGenerator<GenerationSettings> {
     @Override
     public void makeBase(IWorld worldIn, IChunk chunkIn) {
     }
+
 }
