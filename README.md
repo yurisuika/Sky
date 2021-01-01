@@ -31,9 +31,14 @@ You can use Sky to make a spawn map and use command blocks to travel to other di
 * Removed void fade and horizon darkness.
 * Added language file for world type.
 
+<details><summary>
+CLICK HERE TO SEE PAST LOGS!
+</summary>
+
 ##### 0.1.0
 
 * Initial release.
+</details>
 
 ## DOWNLOADS
 
