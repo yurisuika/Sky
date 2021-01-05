@@ -14,6 +14,6 @@ public class SkyWorldType extends WorldType {
 
     @Override
     public double voidFadeMagnitude() {
-        return 0.0D;
+        return 1.0D;
     }
 }

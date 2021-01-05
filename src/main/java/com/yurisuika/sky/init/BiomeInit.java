@@ -44,7 +44,8 @@ public class BiomeInit {
 	}
 
 	private static void registerBiome(Biome biome, Type... types) {
-		// the line below will make it spawn in the overworld
+		BiomeDictionary.addTypes(biome, types);
+		// BiomeManager.addSpawnBiome(biome);
 	}
 
 	@SuppressWarnings("deprecation")
