@@ -26,7 +26,7 @@ You can use Sky to make a spawn map and use command blocks to travel to other di
 
 ##### 1.2.0
 
-* 1.16!
+* 1.16.
 
 <details><summary>
 CLICK HERE TO SEE PAST LOGS!
