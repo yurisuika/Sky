@@ -24,6 +24,18 @@ You can use Sky to make a spawn map and use command blocks to travel to other di
 
 ## CHANGELOG
 
+##### 1.2.0
+
+* 1.16!
+
+<details><summary>
+CLICK HERE TO SEE PAST LOGS!
+</summary>
+
+##### 1.1.1
+
+* General improvements.
+
 ##### 1.1.0
 
 * Updated to Forge 31.2.47.
@@ -34,6 +46,7 @@ You can use Sky to make a spawn map and use command blocks to travel to other di
 ##### 0.1.0
 
 * Initial release.
+</details>
 
 ## DOWNLOADS
 
@@ -63,7 +76,9 @@ While you can compile from source, you can always download the latest releases r
 
 Stable releases of Sky ready to be consumed by the public!
 
-##### 1.15 - [*`1.1.0`*](https://github.com/yurisuika/Sky/releases/download/1.0.0/sky-1.15.2-1.1.0.jar)
+##### 1.16 - [*`1.2.0`*](https://github.com/yurisuika/Sky/releases/download/1.2.0/sky-1.16.4-1.2.0.jar)
+
+##### 1.15 - [*`1.1.1`*](https://github.com/yurisuika/Sky/releases/download/1.1.1/sky-1.15.2-1.1.1.jar)
 
 ## LINKS
 
