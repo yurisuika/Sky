@@ -3,11 +3,14 @@ loaderVersion="[31,)"
 
 [[mods]]
 modId="sky"
-version="1.1.0"
+version="1.1.1"
 displayName="Sky"
-description="Sky"
-displayURL="http://suikacraft.com"
+updateJSONURL="https://github.com/yurisuika/Sky/blob/master/updates.json"
+displayURL="https://github.com/yurisuika/Sky"
 authors="yurisuika"
+logoFile="pack.png"
+credits="yurisuika"
+description="Sky - a sky dimension mod."
 
 [[dependencies.sky]]
     modId="forge"
