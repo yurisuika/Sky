@@ -24,15 +24,19 @@ You can use Sky to make a spawn map and use command blocks to travel to other di
 
 ## CHANGELOG
 
+##### 1.2.2
+
+* Mixin to fix cloud height with TerraForged.
+
+<details><summary>
+CLICK HERE TO SEE PAST LOGS!
+</summary>
+
 ##### 1.2.1
 
 * Fixed sky and fog rendering!
 * Cleaned up code and data.
 * Updated to Forge 35.1.32.
-
-<details><summary>
-CLICK HERE TO SEE PAST LOGS!
-</summary>
 
 ##### 1.2.0
 
@@ -89,6 +93,10 @@ Stable releases of Sky ready to be consumed by the public!
 ## LINKS
 
 Get all the hot tips and tricks here!
+
+#### DEPENDENCIES
+
+Sap requires *[TerraForged](https://github.com/TerraForged/TerraForged)* as a dependency!
 
 #### SERVERS
 
