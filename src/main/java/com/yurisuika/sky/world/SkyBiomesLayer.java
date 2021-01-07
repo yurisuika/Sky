@@ -1,9 +1,11 @@
-package com.yurisuika.sky.world.layer;
+package com.yurisuika.sky.world;
 
+import com.yurisuika.sky.registry.SkyBiomes;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.IExtendedNoiseRandom;
+import net.minecraft.world.gen.INoiseRandom;
 import net.minecraft.world.gen.LazyAreaLayerContext;
 import net.minecraft.world.gen.area.IArea;
 import net.minecraft.world.gen.area.IAreaFactory;
@@ -11,10 +13,21 @@ import net.minecraft.world.gen.area.LazyArea;
 import net.minecraft.world.gen.layer.Layer;
 import net.minecraft.world.gen.layer.LayerUtil;
 import net.minecraft.world.gen.layer.ZoomLayer;
+import net.minecraft.world.gen.layer.traits.IAreaTransformer0;
 
 import java.util.function.LongFunction;
 
-public class SkyLayerUtil {
+public class SkyBiomesLayer implements IAreaTransformer0 {
+    protected int[] biomes = new int[]{
+            getBiomeId(SkyBiomes.sky),
+    };
+
+    public SkyBiomesLayer() { }
+
+    @Override
+    public int apply(INoiseRandom iNoiseRandom, int rand1, int rand2) {
+        return biomes[iNoiseRandom.random(biomes.length)];
+    }
 
     private static Registry<Biome> biomeRegistry;
 

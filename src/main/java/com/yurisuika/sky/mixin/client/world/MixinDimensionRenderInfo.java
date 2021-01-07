@@ -1,6 +1,6 @@
 package com.yurisuika.sky.mixin.client.world;
 
-import com.yurisuika.sky.registry.ModDimensions;
+import com.yurisuika.sky.registry.SkyDimensions;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.world.DimensionRenderInfo;
 import org.spongepowered.asm.mixin.Mixin;
@@ -21,7 +21,7 @@ public class MixinDimensionRenderInfo {
     @Inject(method = "func_239213_a_", at = @At("HEAD"), cancellable = true)
     private void getCloudHeight(CallbackInfoReturnable<Float> ci) {
         float value =  0F;
-        if (ModDimensions.isSkyDimension(Minecraft.getInstance().world)) {
+        if (SkyDimensions.isSkyDimension(Minecraft.getInstance().world)) {
             ci.setReturnValue(value);
         }
     }

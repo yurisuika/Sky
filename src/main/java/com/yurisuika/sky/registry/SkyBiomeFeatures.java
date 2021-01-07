@@ -15,7 +15,7 @@ public class SkyBiomeFeatures {
 
     public static final SurfaceBuilderConfig SKY = new SurfaceBuilderConfig(AIR, AIR, AIR);
 
-    public static final ConfiguredSurfaceBuilder<SurfaceBuilderConfig> sky = registerSurfaceBuilder("sky", ModWorldgen.SKY.func_242929_a(SKY));
+    public static final ConfiguredSurfaceBuilder<SurfaceBuilderConfig> sky = registerSurfaceBuilder("sky", SkyDimensions.SKY.func_242929_a(SKY));
 
 
     private static <SC extends ISurfaceBuilderConfig> ConfiguredSurfaceBuilder<SC> registerSurfaceBuilder(String name, ConfiguredSurfaceBuilder<SC> surface) {

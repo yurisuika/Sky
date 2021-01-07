@@ -1,8 +1,8 @@
 package com.yurisuika.sky;
 
-import com.yurisuika.sky.data.SkyBiomes;
-import com.yurisuika.sky.registry.ModBiomes;
-import com.yurisuika.sky.registry.ModDimensions;
+import com.yurisuika.sky.data.DataBiomes;
+import com.yurisuika.sky.registry.SkyBiomes;
+import com.yurisuika.sky.registry.SkyDimensions;
 import net.minecraft.client.world.DimensionRenderInfo;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.util.math.vector.Vector3d;
@@ -11,7 +11,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -30,20 +29,20 @@ public class Sky {
 
 	public Sky() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		new ModBiomes();
+		new SkyBiomes();
 
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		modEventBus.addListener(this::setup);
 		modEventBus.addListener(this::clientSetup);
 		modEventBus.addListener(this::gatherData);
 
-		ModBiomes.BIOMES.register(modEventBus);
+		SkyBiomes.BIOMES.register(modEventBus);
 
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	private void setup(final FMLCommonSetupEvent event) {
-		ModDimensions.initDimension();
+		SkyDimensions.initDimension();
 	}
 
 	public void clientSetup(FMLClientSetupEvent event) {
@@ -64,7 +63,7 @@ public class Sky {
 	public void gatherData(GatherDataEvent event) {
 		DataGenerator generator = event.getGenerator();
 		if (event.includeServer()) {
-			generator.addProvider(new SkyBiomes(generator));
+			generator.addProvider(new DataBiomes(generator));
 		}
 	}
 
