@@ -1,9 +1,8 @@
-package com.yurisuika.sky.world.layer;
+package com.yurisuika.sky.world;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.yurisuika.sky.Sky;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.SharedConstants;
 import net.minecraft.util.Util;
@@ -17,7 +16,7 @@ import net.minecraft.world.gen.layer.Layer;
 import java.util.List;
 import java.util.Random;
 
-import static com.yurisuika.sky.registry.ModBiomes.*;
+import static com.yurisuika.sky.registry.SkyBiomes.*;
 
 public class SkyBiomeProvider extends BiomeProvider {
 
@@ -36,7 +35,7 @@ public class SkyBiomeProvider extends BiomeProvider {
         super(biomes.stream().map(key -> () -> registry.getOrThrow(key)));
         this.seed = seed;
         this.registry = registry;
-        this.genBiomes = SkyLayerUtil.makeLayers(seed, registry);
+        this.genBiomes = SkyBiomesLayer.makeLayers(seed, registry);
     }
 
     @Override

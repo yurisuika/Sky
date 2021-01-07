@@ -6,6 +6,7 @@
   "mixins": [
   ],
   "client": [
+    "client.MixinMinecraft",
     "client.world.MixinClientWorld",
     "client.world.MixinDimensionRenderInfo",
     "client.world.MixinWorldRenderer"

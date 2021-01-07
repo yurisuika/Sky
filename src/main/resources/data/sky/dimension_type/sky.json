@@ -1,8 +1,8 @@
 {
-  "name": "Sky Dimension",
+  "name": "sky:sky",
   "ultrawarm": false,
   "natural": true,
-  "coordinate_scale": 1.0,
+  "coordinate_scale": 30000000.0,
   "has_skylight": true,
   "has_ceiling": false,
   "ambient_light": 0,
@@ -12,5 +12,5 @@
   "has_raids": false,
   "logical_height": 256,
   "infiniburn": "minecraft:infiniburn_overworld",
-  "effects": "sky:sky"
+  "effects": "minecraft:overworld"
 }

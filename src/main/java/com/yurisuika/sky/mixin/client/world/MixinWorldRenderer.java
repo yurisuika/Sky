@@ -1,6 +1,6 @@
 package com.yurisuika.sky.mixin.client.world;
 
-import com.yurisuika.sky.registry.ModDimensions;
+import com.yurisuika.sky.registry.SkyDimensions;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.WorldRenderer;
 import net.minecraft.client.world.ClientWorld;
@@ -24,8 +24,8 @@ public class MixinWorldRenderer {
                     target = "Lnet/minecraft/client/world/ClientWorld$ClientWorldInfo;getVoidFogHeight()D"
             )
     )
-    private double redirectGetSkyDarknessHeight(ClientWorld.ClientWorldInfo properties) {
-        if (ModDimensions.isSkyDimension(Minecraft.getInstance().world)) {
+    private double getVoidFogHeight(ClientWorld.ClientWorldInfo properties) {
+        if (SkyDimensions.isSkyDimension(Minecraft.getInstance().world)) {
             return 0;
         }
         return properties.getVoidFogHeight();

@@ -1,28 +1,20 @@
 package com.yurisuika.sky.world;
 
-import com.google.common.collect.ImmutableMap;
-import com.google.common.collect.Maps;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.block.Blocks;
+import com.sun.javafx.geom.Vec3d;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.registry.DynamicRegistries;
-import net.minecraft.util.registry.MutableRegistry;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
-import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.provider.BiomeProvider;
-import net.minecraft.world.biome.provider.SingleBiomeProvider;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.IChunk;
 import net.minecraft.world.gen.*;
 import net.minecraft.world.gen.feature.structure.StructureManager;
-import net.minecraft.world.gen.settings.DimensionStructuresSettings;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-import java.util.Optional;
 import java.util.Random;
 import java.util.function.Supplier;
 
@@ -35,21 +27,12 @@ public class SkyChunkGenerator extends NoiseChunkGenerator {
                     DimensionSettings.field_236098_b_.fieldOf("settings").forGetter(SkyChunkGenerator::getSettings)
             ).apply(instance, instance.stable(SkyChunkGenerator::new)));
 
-    //public static final Codec<SkyChunkGenerator> CODEC = RecordCodecBuilder.create((instance) ->
-    //        instance.group(
-    //                BiomeProvider.CODEC.fieldOf("biome_source").forGetter(ChunkGenerator::getBiomeProvider).apply(instance, instance.stable(SkyChunkGenerator::new))
-    //        ));
-
     private long seed;
 
     public SkyChunkGenerator(BiomeProvider provider, long seed, Supplier<DimensionSettings> settingsIn) {
         super(provider, seed, settingsIn);
         this.seed = seed;
     }
-
-    //public SkyChunkGenerator(FlatGenerationSettings p_i231902_1_) {
-    //    super(field_236070_e_);
-    //}
 
     private Supplier<DimensionSettings> getSettings() {
         return field_236080_h_;
@@ -87,6 +70,28 @@ public class SkyChunkGenerator extends NoiseChunkGenerator {
 
     private void buildBedrock(Chunk chunk, Random random) {
         BlockPos.Mutable mutable = new BlockPos.Mutable();
+    }
+
+    public float calculateCelestialAngle(long worldTime, float partialTicks) {
+        double d0 = MathHelper.frac((double) worldTime / 24000.0D - 0.25D);
+        double d1 = 0.5D - Math.cos(d0 * Math.PI) / 2.0D;
+        return (float) (d0 * 2.0D + d1) / 3.0F;
+    }
+
+    public boolean isSurfaceWorld() {
+        return true;
+    }
+
+    public Vec3d getFogColor(float celestialAngle, float partialTicks) {
+        float f = MathHelper.cos(celestialAngle * ((float) Math.PI * 2F)) * 2.0F + 0.5F;
+        f = MathHelper.clamp(f, 0.0F, 1.0F);
+        float f1 = 0.78823529F;
+        float f2 = 0.83921568F;
+        float f3 = 0.87843137F;
+        f1 = f1 * (f * 0.94F + 0.06F);
+        f2 = f2 * (f * 0.94F + 0.06F);
+        f3 = f3 * (f * 0.91F + 0.09F);
+        return new Vec3d((double) f1, (double) f2, (double) f3);
     }
 
 }

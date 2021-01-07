@@ -1,18 +1,22 @@
 modLoader="javafml"
 license="MIT"
 loaderVersion="[35,)"
+issueTrackerURL="https://github.com/yurisuika/Sky/issues"
 
 [[mods]]
 modId="sky"
-version="1.2.0"
+version="1.2.1"
 displayName="Sky"
-description="Sky"
-displayURL="http://suikacraft.com"
+updateJSONURL="https://github.com/yurisuika/Sky/blob/master/updates.json"
+displayURL="https://github.com/yurisuika/Sky"
+logoFile="pack.png"
+credits="yurisuika"
 authors="yurisuika"
+description="Sap - a sky dimension mod."
 
 [[dependencies.sky]]
-    modId="forge"
-    mandatory=true
-    versionRange="[35,)"
-    ordering="NONE"
-    side="BOTH"
+modId="forge"
+mandatory=true
+versionRange="[35,)"
+ordering="NONE"
+side="BOTH"

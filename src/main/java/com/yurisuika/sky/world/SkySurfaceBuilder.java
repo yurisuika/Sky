@@ -1,4 +1,4 @@
-package com.yurisuika.sky.world.surface;
+package com.yurisuika.sky.world;
 
 import com.mojang.serialization.Codec;
 import net.minecraft.block.BlockState;

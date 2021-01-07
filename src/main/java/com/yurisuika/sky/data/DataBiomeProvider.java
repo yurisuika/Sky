@@ -1,10 +1,9 @@
-package com.yurisuika.sky.data.provider;
+package com.yurisuika.sky.data;
 
 import com.google.gson.JsonElement;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.JsonOps;
 import com.yurisuika.sky.registry.SkyBiomeFeatures;
-import net.minecraft.data.BiomeProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DirectoryCache;
 import net.minecraft.data.IDataProvider;
@@ -19,9 +18,9 @@ import java.util.Optional;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-public abstract class SkyBiomeProvider extends BiomeProvider {
+public abstract class DataBiomeProvider extends net.minecraft.data.BiomeProvider {
 
-    public SkyBiomeProvider(DataGenerator generator) {
+    public DataBiomeProvider(DataGenerator generator) {
         super(generator);
     }
 
@@ -59,9 +58,9 @@ public abstract class SkyBiomeProvider extends BiomeProvider {
 
     public static Biome.Builder createBuilder(BiomeAmbience ambience, BiomeGenerationSettings settings, MobSpawnInfo info) {
         return (new Biome.Builder())
-                .precipitation(Biome.RainType.NONE)
-                .downfall(0.0F)
-                .category(Biome.Category.NONE)
+                .precipitation(Biome.RainType.RAIN)
+                .downfall(0.5F)
+                .category(Biome.Category.PLAINS)
                 .withTemperatureModifier(Biome.TemperatureModifier.NONE)
                 .setEffects(ambience)
                 .withGenerationSettings(settings)
@@ -74,10 +73,6 @@ public abstract class SkyBiomeProvider extends BiomeProvider {
 
     public static MobSpawnInfo.Builder createSpawns() {
         return new MobSpawnInfo.Builder();
-    }
-
-    public static BiomeAmbience createAmbience(int plant, int sky, int fog) {
-        return createAmbience(plant, plant, sky, fog);
     }
 
     public static BiomeAmbience createAmbience(int grass, int foliage, int sky, int fog) {
