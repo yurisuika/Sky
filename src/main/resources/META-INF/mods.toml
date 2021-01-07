@@ -12,7 +12,7 @@ displayURL="https://github.com/yurisuika/Sky"
 logoFile="pack.png"
 credits="yurisuika"
 authors="yurisuika"
-description="Sap - a sky dimension mod."
+description="Sky - a sky dimension mod."
 
 [[dependencies.sky]]
 modId="forge"
