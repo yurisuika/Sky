@@ -27,6 +27,12 @@ public class Sky {
 	public static final String MOD_ID = "sky";
 	public static Sky instance;
 
+	public static ResourceLocation locate(String name)
+	{
+		return new ResourceLocation(MOD_ID, name);
+	}
+
+
 	public Sky() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		new SkyBiomes();
@@ -46,7 +52,7 @@ public class Sky {
 	}
 
 	public void clientSetup(FMLClientSetupEvent event) {
-		DimensionRenderInfo gaia = new DimensionRenderInfo(255.0F, true, DimensionRenderInfo.FogType.NORMAL, false, false) {
+		DimensionRenderInfo sky = new DimensionRenderInfo(0.0F, true, DimensionRenderInfo.FogType.NORMAL, false, false) {
 			@Override
 			public Vector3d func_230494_a_(Vector3d vector3d, float v) {
 				return vector3d;
@@ -57,7 +63,7 @@ public class Sky {
 				return false;
 			}
 		};
-		DimensionRenderInfo.field_239208_a_.put(new ResourceLocation(Sky.MOD_ID, "sky"), gaia);
+		DimensionRenderInfo.field_239208_a_.put(new ResourceLocation(Sky.MOD_ID, "sky"), sky);
 	}
 
 	public void gatherData(GatherDataEvent event) {
