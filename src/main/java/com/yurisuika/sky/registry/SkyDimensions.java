@@ -32,4 +32,9 @@ public class SkyDimensions {
         return key == SKY;
     }
 
+    public static boolean isOverworldDimension(World world) {
+        final RegistryKey<World> key = world.getDimensionKey();
+        return key == world.OVERWORLD;
+    }
+
 }

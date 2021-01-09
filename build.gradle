@@ -11,10 +11,6 @@ buildscript {
     }
 }
 
-plugins {
-    id "com.wynprice.cursemaven" version "2.1.1"
-}
-
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'eclipse'
@@ -85,7 +81,6 @@ mixin {
 dependencies {
     minecraft 'net.minecraftforge:forge:' + minecraft_version + '-' + forge_version
     compile 'org.spongepowered:mixin:0.8.2'
-    implementation fg.deobf("curse.maven:TerraForged:3159037")
 }
 
 task sourcesJar(type: Jar) {

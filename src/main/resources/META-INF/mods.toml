@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/yurisuika/Sky/issues"
 
 [[mods]]
 modId="sky"
-version="1.2.2"
+version="1.2.3"
 displayName="Sky"
 updateJSONURL="https://raw.githubusercontent.com/yurisuika/Sky/master/updates.json"
 displayURL="https://github.com/yurisuika/Sky"
@@ -19,11 +19,4 @@ modId="forge"
 mandatory=true
 versionRange="[35,)"
 ordering="NONE"
-side="BOTH"
-
-[[dependencies.sky]]
-modId="terraforged"
-mandatory=false
-versionRange="[0.2.0-BETA-6,)"
-ordering="AFTER"
 side="BOTH"

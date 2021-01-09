@@ -20,9 +20,20 @@ public class MixinDimensionRenderInfo {
      */
     @Inject(method = "func_239213_a_", at = @At("HEAD"), cancellable = true)
     private void getCloudHeight(CallbackInfoReturnable<Float> ci) {
-        float value =  0F;
-        if (SkyDimensions.isSkyDimension(Minecraft.getInstance().world)) {
-            ci.setReturnValue(value);
+
+        if (SkyDimensions.isOverworldDimension(Minecraft.getInstance().world)) {
+            float overworld =  220F;
+            ci.setReturnValue(overworld);
+        }
+        else {
+            if (SkyDimensions.isSkyDimension(Minecraft.getInstance().world)) {
+                float sky =  0F;
+                ci.setReturnValue(sky);
+            }
+            else {
+                float value = 128F;
+                ci.setReturnValue(value);
+            }
         }
     }
 

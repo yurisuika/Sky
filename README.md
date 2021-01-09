@@ -24,13 +24,17 @@ You can use Sky to make a spawn map and use command blocks to travel to other di
 
 ## CHANGELOG
 
-##### 1.2.2
+##### 1.2.3
 
-* Mixin to fix cloud height with TerraForged.
+* Removed dependency... we control the skies now!
 
 <details><summary>
 CLICK HERE TO SEE PAST LOGS!
 </summary>
+
+##### 1.2.2
+
+* Mixin to fix cloud height with TerraForged.
 
 ##### 1.2.1
 
@@ -86,17 +90,13 @@ While you can compile from source, you can always download the latest releases r
 
 Stable releases of Sky ready to be consumed by the public!
 
-##### 1.16 - [*`1.2.2`*](https://github.com/yurisuika/Sky/releases/download/1.2.2/sky-1.16.4-1.2.2.jar)
+##### 1.16 - [*`1.2.3`*](https://github.com/yurisuika/Sky/releases/download/1.2.3/sky-1.16.4-1.2.3.jar)
 
 ##### 1.15 - [*`1.1.1`*](https://github.com/yurisuika/Sky/releases/download/1.1.1/sky-1.15.2-1.1.1.jar)
 
 ## LINKS
 
 Get all the hot tips and tricks here!
-
-#### DEPENDENCIES
-
-Sap requires *[TerraForged](https://github.com/TerraForged/TerraForged)* as a dependency!
 
 #### SERVERS
 
