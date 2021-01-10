@@ -24,13 +24,31 @@ You can use Sky to make a spawn map and use command blocks to travel to other di
 
 ## CHANGELOG
 
-##### 1.1.1
+##### 1.2.3
 
-* General improvements.
+* Removed dependency... we control the skies now!
 
 <details><summary>
 CLICK HERE TO SEE PAST LOGS!
 </summary>
+
+##### 1.2.2
+
+* Mixin to fix cloud height with TerraForged.
+
+##### 1.2.1
+
+* Fixed sky and fog rendering!
+* Cleaned up code and data.
+* Updated to Forge 35.1.32.
+
+##### 1.2.0
+
+* 1.16!
+
+##### 1.1.1
+
+* General improvements.
 
 ##### 1.1.0
 
@@ -48,7 +66,7 @@ CLICK HERE TO SEE PAST LOGS!
 
 ### Source Building
 
-To build from source you will need have JDK 8  to compile and, optionally, Git to clone the repository. Otherwise, download the archive and just run `./gradlew build` from the root project folder.
+To build from source you will need have JDK 8 to compile and, optionally, Git to clone the repository. Otherwise, download the archive and just run `./gradlew build` from the root project folder.
 
 #### Commands
 
@@ -71,6 +89,8 @@ While you can compile from source, you can always download the latest releases r
 #### Latest Builds
 
 Stable releases of Sky ready to be consumed by the public!
+
+##### 1.16 - [*`1.2.3`*](https://github.com/yurisuika/Sky/releases/download/1.2.3/sky-1.16.4-1.2.3.jar)
 
 ##### 1.15 - [*`1.1.1`*](https://github.com/yurisuika/Sky/releases/download/1.1.1/sky-1.15.2-1.1.1.jar)
 

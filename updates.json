@@ -1,9 +1,19 @@
 {
   "homepage": "https://github.com/yurisuika/Sky",
+  "1.16.4": {
+    "1.2.3": "Removed dependency... we control the skies now!",
+    "1.2.2": "Mixin to fix cloud height with TerraForged.",
+    "1.2.1": "Fixed sky and fog rendering! Cleaned up code and data. Updated to Forge 35.1.32.",
+    "1.2.0": "1.16!"
+  },
   "1.15.2": {
-    "1.1.1": "General improvements!",
+    "1.1.1": "General improvements.",
+    "1.1.0": "Updated to Forge 31.2.47. Clouds now render at 0. You are in the sky! Removed void fade and horizon darkness. Added language file for world type.",
+    "1.0.0": "Initial release."
   },
   "promos": {
+    "1.16.4-latest": "1.2.3",
+    "1.16.4-recommended": "1.2.3",
     "1.15.2-latest": "1.1.1",
     "1.15.2-recommended": "1.1.1"
   }
