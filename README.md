@@ -4,25 +4,31 @@ Sky is a Forge mod for Minecraft that adds a Sky dimension. Weather and daytime 
 
 You can use Sky to make a spawn map and use command blocks to travel to other dimensions. The sky is yours to paste in your own schematics and structures, or start off from scratch right here!
 
+---
+
 ## FEATURES
 
-### Dimension
+### Dimensions
 
-#### Sky
+##### Sky
 
 * Nothing but pure freedom!
 * Don't expect to find anything here at all!
 * You are above the clouds, literally!
 
-### Biome
+### Biomes
 
-#### Sky
+##### Sky
 
 * Pure air!
 * Nothing but air!
 * Did I mention air?
 
+---
+
 ## CHANGELOG
+
+### 1.16 Releases
 
 ##### 1.2.3
 
@@ -45,6 +51,17 @@ CLICK HERE TO SEE PAST LOGS!
 ##### 1.2.0
 
 * 1.16!
+</details>
+
+### 1.15 Releases
+
+##### 1.1.2
+
+* Removed biome dictionary type for Overworld.
+
+<details><summary>
+CLICK HERE TO SEE PAST LOGS!
+</summary>
 
 ##### 1.1.1
 
@@ -61,6 +78,8 @@ CLICK HERE TO SEE PAST LOGS!
 
 * Initial release.
 </details>
+
+---
 
 ## DOWNLOADS
 
@@ -92,7 +111,9 @@ Stable releases of Sky ready to be consumed by the public!
 
 ##### 1.16 - [*`1.2.3`*](https://github.com/yurisuika/Sky/releases/download/1.2.3/sky-1.16.4-1.2.3.jar)
 
-##### 1.15 - [*`1.1.1`*](https://github.com/yurisuika/Sky/releases/download/1.1.1/sky-1.15.2-1.1.1.jar)
+##### 1.15 - [*`1.1.2`*](https://github.com/yurisuika/Sky/releases/download/1.1.2/sky-1.15.2-1.1.2.jar)
+
+---
 
 ## LINKS
 
