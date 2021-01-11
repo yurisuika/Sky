@@ -40,7 +40,7 @@ public class BiomeInit {
 									.category(Category.PLAINS).downfall(0.5f).depth(0.12f).parent(null)));
 
 	public static void registerBiomes() {
-		registerBiome(SKY_BIOME.get(), Type.PLAINS, Type.OVERWORLD);
+		registerBiome(SKY_BIOME.get(), Type.PLAINS);
 	}
 
 	private static void registerBiome(Biome biome, Type... types) {
