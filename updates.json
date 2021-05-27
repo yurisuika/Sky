@@ -1,5 +1,8 @@
 {
   "homepage": "https://github.com/yurisuika/Sky",
+  "1.16.5": {
+    "1.2.4": "Updated to Forge 36.1.24 for MC 1.16.5!",
+  },
   "1.16.4": {
     "1.2.3": "Removed dependency... we control the skies now!",
     "1.2.2": "Mixin to fix cloud height with TerraForged.",
@@ -13,6 +16,8 @@
     "1.0.0": "Initial release."
   },
   "promos": {
+    "1.16.5-latest": "1.2.4",
+    "1.16.5-recommended": "1.2.4",
     "1.16.4-latest": "1.2.3",
     "1.16.4-recommended": "1.2.3",
     "1.15.2-latest": "1.1.2",
