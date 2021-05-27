@@ -30,13 +30,17 @@ You can use Sky to make a spawn map and use command blocks to travel to other di
 
 ### 1.16 Releases
 
-##### 1.2.3
+##### 1.2.4
 
-* Removed dependency... we control the skies now!
+* Updated to Forge 36.1.24 for MC 1.16.5!
 
 <details><summary>
 CLICK HERE TO SEE PAST LOGS!
 </summary>
+
+##### 1.2.3
+
+* Removed dependency... we control the skies now!
 
 ##### 1.2.2
 

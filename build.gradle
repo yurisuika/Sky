@@ -1,7 +1,7 @@
 buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
-        maven { url = 'http://repo.spongepowered.org/maven/' }
+        maven { url = 'https://repo.spongepowered.org/maven/' }
         jcenter()
         mavenCentral()
     }
@@ -66,12 +66,6 @@ processResources {
         expand 'version': project.version
     }
     rename '(.+_at.cfg)', 'META-INF/$1'
-}
-
-repositories {
-    maven {
-        url = "http://repo.spongepowered.org/maven"
-    }
 }
 
 mixin {

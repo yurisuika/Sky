@@ -13,7 +13,7 @@ public class MixinWorldRenderer {
 
     /**
      * @author
-     * Sap
+     * Sky
      * @reason
      * Horizon Height
      */

@@ -13,7 +13,7 @@ public class MixinClientWorld {
 
     /**
      * @author
-     * Sap
+     * Sky
      * @reason
      * Horizon Height
      */

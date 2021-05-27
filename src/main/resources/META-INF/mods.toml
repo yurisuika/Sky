@@ -1,11 +1,11 @@
 modLoader="javafml"
 license="MIT"
-loaderVersion="[35,)"
+loaderVersion="[36,)"
 issueTrackerURL="https://github.com/yurisuika/Sky/issues"
 
 [[mods]]
 modId="sky"
-version="1.2.3"
+version="1.2.4"
 displayName="Sky"
 updateJSONURL="https://raw.githubusercontent.com/yurisuika/Sky/master/updates.json"
 displayURL="https://github.com/yurisuika/Sky"
@@ -17,6 +17,6 @@ description="Sky - a sky dimension mod."
 [[dependencies.sky]]
 modId="forge"
 mandatory=true
-versionRange="[35,)"
+versionRange="[36,)"
 ordering="NONE"
 side="BOTH"

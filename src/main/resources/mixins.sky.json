@@ -4,9 +4,10 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "sky.refmap.json",
   "mixins": [
+    "block.MixinTNTBlock",
+    "world.storage.MixinServerWorldInfo"
   ],
   "client": [
-    "client.MixinMinecraft",
     "client.world.MixinClientWorld",
     "client.world.MixinDimensionRenderInfo",
     "client.world.MixinWorldRenderer"
