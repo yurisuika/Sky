@@ -113,7 +113,7 @@ While you can compile from source, you can always download the latest releases r
 
 Stable releases of Sky ready to be consumed by the public!
 
-##### 1.16 - [*`1.2.3`*](https://github.com/yurisuika/Sky/releases/download/1.2.3/sky-1.16.4-1.2.3.jar)
+##### 1.16 - [*`1.2.4`*](https://github.com/yurisuika/Sky/releases/download/1.2.4/sky-1.16.5-1.2.4.jar)
 
 ##### 1.15 - [*`1.1.2`*](https://github.com/yurisuika/Sky/releases/download/1.1.2/sky-1.15.2-1.1.2.jar)
 
