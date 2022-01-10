@@ -1,4 +1,4 @@
-# [Sky](http://suikacraft.com)
+# Sky
 
 Sky is a Forge mod for Minecraft that adds a Sky dimension. Weather and daytime pass just like in the Overworld, but absolutely no blocks generate!
 
