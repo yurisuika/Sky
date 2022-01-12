@@ -16,7 +16,7 @@ To build from source you will need have JDK 8 to compile and, optionally, Git to
 
 #### Commands
 
-When using Git, just choose a directory you wish to keep the project root folder in, then run these commands:
+When using Git, just choose a directory you wish to keep the project root folder in, decide which branch you wish to compile, and then run these commands:
 
 ```shell script
 git clone --recursive https://github.com/yurisuika/sky.git
