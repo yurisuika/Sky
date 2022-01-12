@@ -8,7 +8,7 @@ You can use Sky to make a spawn map and use command blocks to travel to other di
 
 ---
 
-## DOWNLOADS
+## <p align="center">DOWNLOADS</p>
 
 ### Source Building
 
@@ -38,18 +38,20 @@ Stable releases of Sky ready to be consumed by the public!
 
 ##### 1.16 - [*`1.2.4`*](https://github.com/yurisuika/Sky/releases/download/1.2.4/sky-1.16.5-1.2.4.jar)
 
+For Forge 1.16.5!
+
 ##### 1.15 - [*`1.1.2`*](https://github.com/yurisuika/Sky/releases/download/1.1.2/sky-1.15.2-1.1.2.jar)
+
+For Forge 1.15.2!
 
 ---
 
-## LINKS
+## <p align="center">LINKS</p>
 
-Get all the hot tips and tricks here!
-
-#### SERVERS
+#### Servers
 
 Join *`play.suikacraft.com`* to play on SuikaCraft today!
 
-#### COMMUNITY
+#### Community
 
 The one and only! Join the *[SuikaCraft Discord](https://discord.gg/0zdNEkQle7Qg9C1H)* to find the latest discussion on the resource pack and server or just to chat!
