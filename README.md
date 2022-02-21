@@ -28,29 +28,9 @@ cd ./sky
 
 Afterwards, your compiled JAR will be in `./build/libs`.
 
-### Released Builds
-
-While you can compile from source, you can always download the latest releases right off of GitHub. Either click the links below or check the releases tab.
-
-#### Latest Builds
-
-Stable releases of Sky ready to be consumed by the public!
-
-##### 1.16 - [*`1.2.4`*](https://github.com/yurisuika/Sky/releases/download/1.2.4/sky-1.16.5-1.2.4.jar)
-
-For Forge 1.16.5!
-
-##### 1.15 - [*`1.1.2`*](https://github.com/yurisuika/Sky/releases/download/1.1.2/sky-1.15.2-1.1.2.jar)
-
-For Forge 1.15.2!
-
 ---
 
 ## <p align="center">LINKS</p>
-
-#### Servers
-
-Join *`play.suikacraft.com`* to play on SuikaCraft today!
 
 #### Community
 
