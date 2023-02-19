@@ -11,7 +11,7 @@ To build from source you will need have JDK 8 to compile and, optionally, Git to
 When using Git, just choose a directory you wish to keep the project root folder in, decide which branch you wish to compile, and then run these commands:
 
 ```shell script
-git clone --branch Forge-1.16 --recursive https://github.com/yurisuika/sky.git
+git clone --branch <branch> --recursive https://github.com/yurisuika/sky.git
 
 cd ./sky
 
