@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/yurisuika/Sky/blob/Forge-1.16/src/main/resources/pack.png?raw=true" width="256" height="256"></p>
+<p align="center"><img src="https://github.com/yurisuika/Sky/blob/Forge-1.16.5/src/main/resources/pack.png?raw=true" width="256" height="256"></p>
 
 **Sky** is a Forge mod for Minecraft that adds a Sky dimension. Weather and daytime pass just like in the Overworld, but absolutely no blocks generate!
 
